@@ -1,10 +1,7 @@
 <h1 *ngIf="!isChange" mat-dialog-title>Adicionar Moeda</h1>
 <h1 *ngIf="isChange"> Editar Moeda </h1>
 <div mat-dialog-content>
-<mat-form-field appearance="fill">
-    <mat-label>ID</mat-label>
-    <input matInput [(ngModel)]="data.id">
-</mat-form-field>
+
 <mat-form-field appearance="fill">
   <mat-label>Nome</mat-label>
   <input matInput [(ngModel)]="data.nome">

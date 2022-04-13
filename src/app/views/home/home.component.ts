@@ -21,7 +21,7 @@ const ELEMENT_DATA: MoedaModel[] = [
 export class HomeComponent implements OnInit {
   @ViewChild(MatTable)
   table!: MatTable<any>
-  displayedColumns: String[] = ['id','nome','descricao','dataAtualizacao','dataInclusao','cotacao','acao'];
+  displayedColumns: String[] = ['id','nome','descricao','dataInclusao','dataAtualizacao','cotacao', 'acao'];
   dataSource!: MoedaModel[];
 
   constructor(

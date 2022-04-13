@@ -6,7 +6,7 @@
         
         <ng-container matColumnDef="id">
             <th mat-header-cell *matHeaderCellDef> No. </th>
-            <td mat-cell *matCellDef="let element"> {{element.id}} </td>
+            <td mat-cell *matCellDef="let element "> {{element.id}} </td>
         </ng-container>
         
         
@@ -20,16 +20,15 @@
       <th mat-header-cell *matHeaderCellDef> Descrição </th>
       <td mat-cell *matCellDef="let element"> {{element.descricao}} </td>
     </ng-container>
-  
-    
-    <ng-container matColumnDef="dataAtualizacao">
-      <th mat-header-cell *matHeaderCellDef> Data de Atualização </th>
-      <td mat-cell *matCellDef="let element"> {{element.dataAtualizacao}} </td>
-    </ng-container>
 
-    <ng-container matColumnDef="dataInclusao">
+      <ng-container matColumnDef="dataInclusao">
         <th mat-header-cell *matHeaderCellDef> Data de Inlcusão </th>
         <td mat-cell *matCellDef="let element"> {{element.dataInclusao}} </td>
+      </ng-container>
+
+      <ng-container matColumnDef="dataAtualizacao">
+        <th mat-header-cell *matHeaderCellDef> Data de Atualização </th>
+        <td mat-cell *matCellDef="let element"> {{element.dataAtualizacao}} </td>
       </ng-container>
       
       <ng-container matColumnDef="cotacao">

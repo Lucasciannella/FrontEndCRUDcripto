@@ -4,6 +4,6 @@ export interface MoedaModel{
     descricao: String;
     dataAtualizacao: Date;
     dataInclusao: Date;
-    cotacao: Number;
+    cotacao: Number;  
   }
   

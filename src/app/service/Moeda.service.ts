@@ -17,7 +17,7 @@ export class MoedaService{
     }
 
     editMoedas(moeda:MoedaModel): Observable<MoedaModel> {
-       return this.http.put<MoedaModel>(this.moedaApiUrl, moeda);
+       return this.http.put<MoedaModel>(`${this.moedaApiUrl}/update/${moeda.id}`, moeda);
     }
 
     deleteMoeda(id: Number): Observable<any>{
